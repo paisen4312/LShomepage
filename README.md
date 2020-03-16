@@ -1,0 +1,2 @@
+# LShomepage
+# LSのホームページです。
