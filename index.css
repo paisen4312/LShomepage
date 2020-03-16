@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*トップページのレイアウト*/
+
+body{
+    margin: auto;
+    background-color: #cafafc;
+    width: auto;
+    font-family: "Mv Boli", "Meiryo UI", sans-serif;
+}
+
+
+.main-content{
+    text-align: center;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-content .pic img{
+    text-align: center;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main-content p{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
