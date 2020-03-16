@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*ヘッダーのレイアウト*/
+
+.contents{
+    display: block;
+    width: 1800px;
+    height: 42px;
+    background-color: darkblue;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.contents a{
+font-family: "Mv Boli", "Meiryo UI", sans-serif;
+color: azure;
+vertical-align: middle;
+text-decoration: none;
+margin-right: 25px;
+margin-left: 25px;
+line-height: 42px;
+}
