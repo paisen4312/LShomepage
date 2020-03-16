@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+
+body{
+    margin: auto;
+    background-color: #cafafc;
+    width: auto;
+    font-family: "Mv Boli", "Meiryo UI", sans-serif;
+}
+
+.top-content{
+    text-align: center;
+    height: 180px;
+    width: 1000px;
+    display: block;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.top-content .grades{
+    display: flex;
+}
+
+.top-content .grade{
+    font-family: "Mv Boli", "Meiryo UI", sans-serif;
+    font-size: 20px;
+    background-color: #cafafc;
+    outline: none;
+    border: none;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+button:focus{
+    outline: 0;
+}
+.top-content .selected-grade{
+    width: 1000px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.top-content .selected-main{
+    font-size: 60px;
+}
+
+.top-content .selected-grade .selected-header{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.top-content .selected-grade img{
+    width: 300px;
+}
+
+.top-content .selected-grade p{
+    font-size: 80px;
+    width: 300px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.player{
+    height: 3000px;
+}
+
+.main-content{
+    text-align: center;
+    height: 4900px;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.player , .manager{
+    width: 30%;
+    float: left;
+    margin-right: 1.6%;
+    margin-left: 1.6%;
+}
+
+.main-content img{
+    height: 300px;
+    width: 100%;
+}
+
+.maincontent p{
+    height: 240px;
+}
