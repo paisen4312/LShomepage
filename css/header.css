@@ -2,6 +2,11 @@
 
 /*ヘッダーのレイアウト*/
 
+.header{
+    position: fixed;
+    top: 0;
+}
+
 .contents{
     display: block;
     text-align:center;
