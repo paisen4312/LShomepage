@@ -9,7 +9,7 @@
     height: 42px;
     background-color: darkblue;
 }
-@media(max-width: 670px){
+@media(max-width: 900px){
 
 .contents{
     width: 1000px; 
