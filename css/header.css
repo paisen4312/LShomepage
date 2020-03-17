@@ -8,15 +8,13 @@
     width: auto;
     height: 42px;
     background-color: darkblue;
-    padding: auto;
-    padding: auto;
 }
 
 .contents a{
 font-family: "Mv Boli", "Meiryo UI", sans-serif;
 color: azure;
 text-decoration: none;
-margin-right: 25px;
-margin-left: 25px;
+margin-right: 2%;
+margin-left: 2%;
 line-height: 42px;
 }
