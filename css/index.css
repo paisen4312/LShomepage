@@ -3,12 +3,12 @@
 /*トップページのレイアウト*/
 
 body{
+    height: 1500px;
     margin: auto;
     background-color: #cafafc;
     width: auto;
     font-family: "Mv Boli", "Meiryo UI", sans-serif;
 }
-
 
 .main-content{
     text-align: center;
