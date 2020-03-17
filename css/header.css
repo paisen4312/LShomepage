@@ -4,6 +4,7 @@
 
 .contents{
     display: block;
+    text-align:center;
     width: auto;
     height: 42px;
     background-color: darkblue;
