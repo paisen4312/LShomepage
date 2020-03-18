@@ -6,9 +6,9 @@ $('#regends').load("member/16th.html");
 $('.grade').click(function(){
     
     $('#members').fadeOut(1500)
-
+    $('.selected-header').fadeOut(1500)
     var grade = $(this).attr("id");
-    changeMember(grade)
+    setTimeOut( "changeMember(grade)" ,2000 )
 
 });
 
@@ -26,5 +26,5 @@ function changeMember(grade){
     $('#members').load("member/" + grade + ".html");
     $('#regends').load("member/" + grade + ".html");
     $('#members').fadeIn(1500)
-
+    $('.selected-header').fadeIn(1500)
 };
