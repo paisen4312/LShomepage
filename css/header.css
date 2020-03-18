@@ -17,15 +17,15 @@
   opacity: 0.8;
   margin: 0;
 }
-  
-.contents .menu {
-  font-family: "Mv Boli", "Meiryo UI", sans-serif;
-  display: none;
-  margin: 0;
+.contents .menu{
+  font-family: "My Boli", "Meiryo UI", sans-serif;
+  display: none;
+  margin: 0;
 }
-.menu-contents {
-  display: none;
+.menu-contents{
+  display: none;
 }
+
 .contents > a{
   color: white;
   text-decoration: none;
@@ -34,30 +34,31 @@
   line-height: 80px;
 }
 @media ( max-width : 900px) {
-  .contents > a {
-    display: none;
-  }
+  .contents > a{
+    display: none;
+  }
   .contents {
-    width: 1000px;
+    width: auto;
   }
-  .contents .menu {
-    width: 96.34px;
-    float: left;
-    display: inline;
-    color: white;
-    line-height: 42px;
-  }
-  .menu-contents {
-    color: white;
-    left-margin: 10px;
-    background-color: darkblue;
-    display: inline-block;
-  }
-  .hidden-menu {
-    display: none;
-  }
-  .menu-contents a {
-    color: white;
-    text-decoration: none;
-  }
+  .contents-menu {
+    width: 96.34px;
+    float: left;
+    display: inline;
+    color: white;
+    line-height: 42px;
+  }
+  
+  .menu-contents {
+    color: white;
+    left-margin: 10px;
+    background-color: darkblue;
+    display: inline-block;
+  }
+  .hidden-menu{
+    display: none;
+  }
+  .menu-contents a{
+    color: white;
+    text-decoration: none;
+  }
 }
