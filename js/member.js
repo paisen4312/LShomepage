@@ -4,6 +4,8 @@ $('#members').load("member/19th.html");
 $('#regends').load("member/16th.html");
 
 $('.grade').click(function(){
+    
+    $('#members').fadeOut(1500)
 
     var grade = $(this).attr("id");
 
@@ -18,5 +20,6 @@ $('.grade').click(function(){
 
     $('#members').load("member/" + grade + ".html");
     $('#regends').load("member/" + grade + ".html");
+        $('#members').fadeIn(1500)
 
 });
