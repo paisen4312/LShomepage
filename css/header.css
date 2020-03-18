@@ -32,12 +32,6 @@
   margin-left: 2%;
   line-height: 80px;
 }
-.contents {
-  font-family: "Mv Boli", "Meiryo UI", sans-serif;
-  color: white;
-  text-decoration: none;
-}
-
 @media ( max-width : 900px) {
   .contents>a {
     display: none;
