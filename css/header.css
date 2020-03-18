@@ -40,7 +40,7 @@
   .contents {
     width: auto;
   }
-  .contents-menu {
+  .contents .menu {
     width: 96.34px;
     float: left;
     display: inline;
