@@ -8,6 +8,11 @@ $('.grade').click(function(){
     $('#members').fadeOut(1500)
 
     var grade = $(this).attr("id");
+    changeMember(grade)
+
+});
+
+function changeMember(grade){
 
     var leftPicRow = $('<img>').addClass("selected-header first-pic").attr("src" , "img/" + grade + "/1.jfif");
     $('.first-pic').replaceWith(leftPicRow);
@@ -20,6 +25,6 @@ $('.grade').click(function(){
 
     $('#members').load("member/" + grade + ".html");
     $('#regends').load("member/" + grade + ".html");
-        $('#members').fadeIn(1500)
+    $('#members').fadeIn(1500)
 
-});
+};
