@@ -15,9 +15,40 @@
     opacity: 0.8;
 }
 @media(max-width: 900px){
+  
+.contents > a{
+  display: none;
+}
+  
 
 .contents{
-    width: 1000px; 
+    width: 1000px; 
+}
+.contents .menu{
+  width: 96.34px;
+  float: left;
+  display: inline;
+  color: white;
+  line-height: 42px;
+}
+
+.menu-contents{
+  color: white;
+  left-margin: 10px;
+  background-color: darkblue;
+  display: inline-block;
+}
+
+.hidden-menu{
+  display: none;
+}
+
+a{
+  color: white;
+    text-decoration: none;
+  
+}
+
 }
     
 }
