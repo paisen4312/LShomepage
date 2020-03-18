@@ -3,21 +3,17 @@
 /*ヘッダーのレイアウト*/
 
 .contents{
-  font-family: "Mv Boli", "Meiryo UI", sans-serif;
-    display: block;
-    width: auto;
-    height: 80px;
-    background-color: darkblue;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    text-align:center;
-    opacity: 0.8;
+    display: block;
+    width: auto;
+    height: 80px;
+    background-color: darkblue;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align:center;
+    opacity: 0.8
 }
-
-
-
 @media(max-width: 900px){
 
 .contents{
