@@ -5,13 +5,14 @@ $('#regends').load("member/16th.html");
 
 $('.grade').click(function(){
     
-    $('#members').fadeOut(1000)
-    $('#regends').fadeOut(1000)
-    $('.selected-header').fadeOut(1000)
-    setTimeout('changeMember(grade)' , 2000)
+    $('#members').fadeOut(1000);
+    $('#regends').fadeOut(1000);
+    $('.selected-header').fadeOut(1000);
+    var grade = $(this).attr("id");
+    setTimeout('changeMember(grade)' , 2000);
 });
     
-function changeMember(var grade){
+function changeMember(grade){
 
     var leftPicRow = $('<img>').addClass("selected-header first-pic").attr("src" , "img/" + grade + "/1.jfif");
     $('.first-pic').replaceWith(leftPicRow);
@@ -24,8 +25,8 @@ function changeMember(var grade){
 
     $('#members').load("member/" + grade + ".html");
     $('#regends').load("member/" + grade + ".html");
-    $('#members').fadeIn(1000)
-    $('#regends').fadeIn(1000)
-    $('.selected-header').fadeIn(1000)
+    $('#members').fadeIn(1000);
+    $('#regends').fadeIn(1000);
+    $('.selected-header').fadeIn(1000);
 };
 
