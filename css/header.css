@@ -34,12 +34,14 @@
   line-height: 80px;
 }
 @media ( max-width : 900px) {
-  .contents > a{
-    display: none;
-  }
+
+  
   .contents {
     width: auto;
   }
+  .contents > a{
+    display: none;
+  }
   .contents .menu {
     width: 96.34px;
     float: left;
