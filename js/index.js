@@ -53,6 +53,6 @@ $('.menu').click(function(){
 
 $('a').click(function(){
 
-  $('.main-content').fadeOut(2000)
+  $('.main-content').fadeIn(2000)
 
 });
