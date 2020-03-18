@@ -8,7 +8,7 @@ $('.grade').click(function(){
     $('#members').fadeOut(1500)
     $('.selected-header').fadeOut(1500)
     var grade = $(this).attr("id");
-    setTimeOut( "changeMember(grade)" ,2000 )
+    setTimeout( "changeMember(grade)" ,2000 )
 
 });
 
