@@ -9,7 +9,8 @@ $('.grade').click(function(){
     $('#regends').fadeOut(1000);
     $('.selected-header').fadeOut(1000);
     var grade = $(this).attr("id");
-    setTimeout('changeMember(grade)' , 2000);
+    setTimeout('console.log("待機")' , 2000);
+    changeMember(grade);
 });
     
 function changeMember(grade){
