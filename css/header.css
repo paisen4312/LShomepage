@@ -26,15 +26,15 @@
 .menu-contents {
   display: none;
 }
-.contents>a {
-  color: white;
-  text-decoration: none;
-  margin-right: 2%;
-  margin-left: 2%;
-  line-height: 80px;
+.contents > a{
+  color: white;
+  text-decoration: none;
+  margin-left: 2%;
+  margin-right: 2%;
+  line-height: 80px;
 }
 @media ( max-width : 900px) {
-  .contents>a {
+  .contents > a {
     display: none;
   }
   .contents {
@@ -56,7 +56,7 @@
   .hidden-menu {
     display: none;
   }
-  a {
+  .menu-contents a {
     color: white;
     text-decoration: none;
   }
