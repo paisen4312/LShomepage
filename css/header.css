@@ -17,16 +17,7 @@
     margin: 0;
 }
 
-.contents .menu{
 
-  display: none;
-  margin: 0;
-  
-}
-
-.menu-contents{
-  display: none;
-}
 
 @media(max-width: 900px){
 
