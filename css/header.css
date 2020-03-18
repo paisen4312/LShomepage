@@ -45,7 +45,7 @@ body{
     display: none;
   }
   .contents .menu {
-    width: 96.34px;
+    width: 192.68px;
     float: left;
     display: inline;
     color: white;
@@ -63,5 +63,6 @@ body{
   .menu-contents a{
     color: white;
     text-decoration: none;
+    line-height: 84px;
   }
 }
