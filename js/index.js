@@ -49,3 +49,10 @@ $('.menu').click(function(){
 
   }
 });
+
+
+$('a').click(function(){
+
+  (html body).fadeOut(2000)
+
+});
