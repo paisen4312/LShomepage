@@ -54,7 +54,6 @@
     color: white;
     left-margin: 10px;
     background-color: darkblue;
-    display: inline-block;
   }
   .hidden-menu{
     display: none;
