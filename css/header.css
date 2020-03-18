@@ -1,8 +1,11 @@
 @charset "UTF-8";
 
+body{
+  font-family: "Mv Boli", "Meiryo UI", sans-serif;
+}
+
 /*ヘッダーのレイアウト*/
 .contents{
-  font-family: "Mv Boli", "Meiryo UI", sans-serif;
   display: block;
   width: auto;
   color: white;
@@ -18,7 +21,6 @@
   margin: 0;
 }
 .contents .menu{
-  font-family: "My Boli", "Meiryo UI", sans-serif;
   display: none;
   margin: 0;
 }
