@@ -2,67 +2,81 @@
 
 /*ヘッダーのレイアウト*/
 
-.contents{
-    display: block;
-    width: auto;
-    height: 80px;
-    background-color: darkblue;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    text-align:center;
-    opacity: 0.8;
-}
-.menu{
-  font-family: "Mv Boli", "Meiryo UI", sans-serif;
-  display: none;
-  margin: 0;
+@media(max-width: 2000px){
+
+  .contents{
+    font-family: "Mv Boli", "Meiryo UI", sans-serif;
+      display: block;
+      width: auto;
+      color: white;
+      text-decoration: none;
+      height: 80px;
+      background-color: darkblue;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      text-align:center;
+      opacity: 0.8;
+      margin: 0;
+  }
+
+  .contents .menu{
+    font-family: "Mv Boli", "Meiryo UI", sans-serif;
+    display: none;
+    margin: 0;
+  }
+
+  .menu-contents{
+    display: none;
+  }
+
+  .contents > a{
+      color: white;
+      text-decoration: none;
+      margin-right: 2%;
+      margin-left: 2%;
+      line-height: 80px;
+  }
+
+  .contents {
+      font-family: "Mv Boli", "Meiryo UI", sans-serif;
+      color: white;
+      text-decoration: none;
+  }
 }
 @media(max-width: 900px){
-  
-.contents > a{
-  display: none;
-}
-  
+    
+  .contents > a{
+    display: none;
+  }
 
-.contents{
-    width: 1000px; 
-}
-.contents .menu{
-  width: 96.34px;
-  float: left;
-  display: inline;
-  color: white;
-  line-height: 42px;
-}
+  .contents{
+      width: 1000px; 
+  }
 
-.menu-contents{
-  color: white;
-  left-margin: 10px;
-  background-color: darkblue;
-  display: inline-block;
-}
+  .contents .menu{
+    width: 96.34px;
+    float: left;
+    display: inline;
+    color: white;
+    line-height: 42px;
+  }
 
-.hidden-menu{
-  display: none;
-}
+  .menu-contents{
+    color: white;
+    left-margin: 10px;
+    background-color: darkblue;
+    display: inline-block;
+  }
 
-a{
-  color: white;
+  .hidden-menu{
+    display: none;
+  }
+
+  a{
+    color: white;
     text-decoration: none;
-  
-}
+  }
 
-}
-    
-}
-
-.contents a{
-    font-family: "Mv Boli", "Meiryo UI", sans-serif;
-    color: azure;
-    text-decoration: none;
-    margin-right: 2%;
-    margin-left: 2%;
-    line-height: 80px;
 }
