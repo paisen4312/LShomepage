@@ -5,6 +5,8 @@
 .contents{
   font-family: "Mv Boli", "Meiryo UI", sans-serif;
     display: block;
+    color: white;
+    text-decoration: none;
     width: auto;
     height: 80px;
     background-color: darkblue;
@@ -37,7 +39,7 @@
   
 
 .contents{
-    width: 1000px; 
+    width: 900px; 
 }
 .contents .menu{
   width: 96.34px;
@@ -74,8 +76,3 @@ a{
     line-height: 80px;
 }
 
-.contents {
-    font-family: "Mv Boli", "Meiryo UI", sans-serif;
-    color: white;
-    text-decoration: none;
-}
