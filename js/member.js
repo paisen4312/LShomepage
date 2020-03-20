@@ -1,4 +1,4 @@
-'use strict';
+$(function(){
 
 $('#members').load("member/19th.html");
 $('#regends').load("member/16th.html");
@@ -38,4 +38,6 @@ function changeMember(grade){
     $('.main-content').fadeIn(1000);
     $('.selected-header').fadeIn(1000);
 };
+    
+});
 
