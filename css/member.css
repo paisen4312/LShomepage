@@ -96,6 +96,7 @@ button:focus{
 }
 
 .main-content p{
+    opacity: 0;
     height: 240px;
 }
 
