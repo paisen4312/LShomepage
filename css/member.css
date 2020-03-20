@@ -70,6 +70,7 @@ button:focus{
     margin-left: auto;
 }
 .player , .manager{
+    position: relative;
     width: 30%;
     float: left;
     margin-right: 1.6%;
@@ -77,8 +78,21 @@ button:focus{
 }
 
 .main-content img{
+    display: block;
     height: 300px;
     width: 100%;
+}
+
+.player span{
+    position: absolute;
+    display: block;
+    height: 50px;
+    width: 300px;
+    bottom: 270px;
+    text-align: center;
+    line-height: 50px;
+    background-color: white;
+    opacity: 0;
 }
 
 .main-content p{
@@ -92,7 +106,10 @@ button:focus{
 
 .sixteen{
     height: 1866px;
-    
+}
+
+.sixteen .players{
+    height: 1184px;
 }
 
 .seventeen{
