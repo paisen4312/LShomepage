@@ -63,12 +63,12 @@ $('.menu').click(function(){
 $('.contents').children('a').hover(
   function(){
     
-    $(this).stop(true).animate({color: 'yellow', fontsize: '27px'}, 500);
+    $(this).animate({"color": "yellow", "font-size": "27px"}, 500);
 
   },
   function(){
     
-    $(this).stop(true).animate({color: 'white', fontsize: '20px'}, 500);
+    $(this).animate({"color": "white", "font-size": "20px"}, 500);
     
   });
 
@@ -76,11 +76,11 @@ $('.contents').children('a').hover(
 $('.menu-contents').children('a').hover(
   function(){
     
-    $(this).stop(true).animate({color: 'yellow', fontsize: '32px'}, 500);
+    $(this).animate({"color": "yellow", "font-size": "32px"}, 500);
 
   },
   function(){
     
-    $(this).stop(true).animate({color: 'white', fontsize: '24px'}, 500);
+    $(this).animate({"color": "white", "font-size": "24px"}, 500);
     
   });
