@@ -27,8 +27,8 @@ body{
 .menu-contents{
   display: none;
 }
-
-.contents > a{
+.contents a{
+  font-size: 20px;
   color: white;
   text-decoration: none;
   margin-left: 2%;
@@ -37,7 +37,6 @@ body{
 }
 @media ( max-width : 900px) {
 
-  
   .contents {
     width: auto;
   }
@@ -45,6 +44,8 @@ body{
     display: none;
   }
   .contents .menu {
+    font-size: 24px;
+    cursor: pointer;
     width: 192.68px;
     float: left;
     display: inline;
@@ -59,10 +60,5 @@ body{
   }
   .hidden-menu{
     display: none;
-  }
-  .menu-contents a{
-    color: white;
-    text-decoration: none;
-    line-height: 84px;
   }
 }
