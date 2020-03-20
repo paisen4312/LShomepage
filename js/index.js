@@ -48,11 +48,39 @@ $('.menu').click(function(){
     $('.menu-contents').addClass("hidden-menu")
 
   }
+
+  if($(this).hasClass("back")){
+    
+   $(this).removeClass("back").children('.hub').text('MENU(開く)') 
+    
+  }else{
+   
+   $(this).addClass("back").children('.hub').text('MENU(閉じる)') 
+   
+  }
 });
 
+$('.contents').children('a').hover(
+  function(){
+    
+    $(this).css({"color": "yellow", "font-size": "27px", "opacity": "1.0"});
 
-$('a').click(function(){
+  },
+  function(){
+    
+    $(this).css({"color": "white", "font-size": "20px", "opacity": "0.8"});
+    
+  });
 
-  $('.main-content').fadeIn(2000)
 
-});
+$('.menu-content').children('a').hover(
+  function(){
+    
+    $(this).css({"color": "yellow", "font-size": "32px", "opacity": "1.0"});
+
+  },
+  function(){
+    
+    $(this).css({"color": "white", "font-size": "24px", "opacity": "0.8"});
+    
+  });
