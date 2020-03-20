@@ -8,6 +8,10 @@ body{
     font-family: "Mv Boli", "Meiryo UI", sans-serif;
 }
 
+img{
+ border-radius:20px;   
+}
+
 .top-content{
     text-align: center;
     height: 180px;
