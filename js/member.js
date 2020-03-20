@@ -5,12 +5,10 @@ $('#regends').load("member/16th.html");
 
 $('.grade').click(function(){
     
-    $('#members').fadeOut(1000);
-    $('#regends').fadeOut(1000);
+    $('.main-content').fadeOut(1000);
     $('.selected-header').fadeOut(1000);
     var grade = $(this).attr("id");
-    setTimeout('console.log("待機")' , 2000);
-    changeMember(grade);
+    setTimeout(function(){changeMember(grade)} , 2000);
 });
     
 function changeMember(grade){
@@ -26,8 +24,7 @@ function changeMember(grade){
 
     $('#members').load("member/" + grade + ".html");
     $('#regends').load("member/" + grade + ".html");
-    $('#members').fadeIn(1000);
-    $('#regends').fadeIn(1000);
+    $('.main-content').fadeIn(1000);
     $('.selected-header').fadeIn(1000);
 };
 
