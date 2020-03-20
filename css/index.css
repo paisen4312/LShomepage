@@ -10,6 +10,10 @@ body{
     font-family: "Mv Boli", "Meiryo UI", sans-serif;
 }
 
+img{
+ border-radius:20px;   
+}
+
 .main-content{
     text-align: center;
     width: 1000px;
