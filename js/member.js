@@ -5,7 +5,7 @@ $('#regends').load("member/16th.html");
 
 $('.grade').click(function(){
     $('.main-content').fadeOut(1000);
-    $('.selected-header').fadeOut(1000);
+    $('.selected-grade').fadeOut(1000);
     var grade = $(this).attr("id");
     setTimeout(function(){changeMember(grade)} , 2000);
 });
@@ -33,7 +33,7 @@ function changeMember(grade){
     $('#members').load("member/" + grade + ".html");
     $('#regends').load("member/" + grade + ".html");
     $('.main-content').fadeIn(1000);
-    $('.selected-header').fadeIn(1000);
+    $('.selected-grade').fadeIn(1000);
 };
     
 });
