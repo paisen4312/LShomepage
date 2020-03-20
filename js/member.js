@@ -11,12 +11,12 @@ $('.grade').click(function(){
     setTimeout(function(){changeMember(grade)} , 2000);
 });
 $('.player')
-    .on('hover', function(){
+    .on('mouseover', function(){
         $(this).find('span').stop(true).animate({
             opacity: 0.8
         }, 1000);
     })
-    .on('hover', function(){
+    .on('mouseout', function(){
         $(this).find('span').stop(true).animate({
             opacity: 0
         }, 1000);
