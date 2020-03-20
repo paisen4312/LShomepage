@@ -4,19 +4,18 @@ $('#members').load("member/19th.html");
 $('#regends').load("member/16th.html");
 
 $('.grade').click(function(){
-    
     $('.main-content').fadeOut(1000);
     $('.selected-header').fadeOut(1000);
     var grade = $(this).attr("id");
     setTimeout(function(){changeMember(grade)} , 2000);
 });
-$('.player')
-    .on('mouseover', function(){
+    $(document)
+    .on('mouseover','.player', function(){
         $(this).find('span').stop(true).animate({
             opacity: 0.8
         }, 1000);
     })
-    .on('mouseout', function(){
+    .on('mouseout','.player', function(){
         $(this).find('span').stop(true).animate({
             opacity: 0
         }, 1000);
