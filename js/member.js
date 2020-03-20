@@ -10,7 +10,18 @@ $('.grade').click(function(){
     var grade = $(this).attr("id");
     setTimeout(function(){changeMember(grade)} , 2000);
 });
-    
+$('.player')
+    .on('hover', function(){
+        $(this).find('span').stop(true).animate({
+            opacity: 0.8
+        }, 1000);
+    })
+    .on('hover', function(){
+        $(this).find('span').stop(true).animate({
+            opacity: 0
+        }, 1000);
+    });
+
 function changeMember(grade){
 
     var leftPicRow = $('<img>').addClass("selected-header first-pic").attr("src" , "img/" + grade + "/1.jfif");
