@@ -63,24 +63,24 @@ $('.menu').click(function(){
 $('.contents').children('a').hover(
   function(){
     
-    $(this).css({"color": "yellow", "font-size": "27px", "opacity": "1.0"});
+    $(this).css({"color": "yellow", "font-size": "27px"});
 
   },
   function(){
     
-    $(this).css({"color": "white", "font-size": "20px", "opacity": "0.8"});
+    $(this).css({"color": "white", "font-size": "20px"});
     
   });
 
 
-$('.menu-content').children('a').hover(
+$('.menu-contents').children('a').hover(
   function(){
     
-    $(this).css({"color": "yellow", "font-size": "32px", "opacity": "1.0"});
+    $(this).css({"color": "yellow", "font-size": "32px"});
 
   },
   function(){
     
-    $(this).css({"color": "white", "font-size": "24px", "opacity": "0.8"});
+    $(this).css({"color": "white", "font-size": "24px"});
     
   });
