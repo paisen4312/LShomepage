@@ -69,7 +69,7 @@ button:focus{
     margin-right: auto;
     margin-left: auto;
 }
-.player , .manager{
+.player{
     position: relative;
     width: 30%;
     float: left;
@@ -83,7 +83,7 @@ button:focus{
     width: 100%;
 }
 
-.player span{
+span{
     position: absolute;
     display: block;
     height: 50px;
