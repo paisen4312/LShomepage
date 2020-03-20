@@ -11,14 +11,12 @@ $('.grade').click(function(){
 });
     $(document)
     .on('mouseover','.player', function(){
-        $(this).find('span').stop(true).animate({
-            opacity: 0.8
-        }, 1000);
+        $(this).find('span').stop(true).animate({opacity: 0.8}, 1000);
+        $(this).find('p').stop(true).animate({opacity: 1}, 1000);
     })
     .on('mouseout','.player', function(){
-        $(this).find('span').stop(true).animate({
-            opacity: 0
-        }, 1000);
+        $(this).find('span').stop(true).animate({opacity: 0}, 1000);
+        $(this).find('p').stop(true).animate({opacity: 0}, 1000);
     });
 
 function changeMember(grade){
