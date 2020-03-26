@@ -1,151 +1,140 @@
 @charset "UTF-8";
 
-
 body{
-    margin: auto;
-    background-color: #cafafc;
-    width: auto;
-    font-family: "Mv Boli", "Meiryo UI", sans-serif;
+  margin: auto;
+  background-color: #cafafc;
+  width: auto;
+  font-family: "Mv Boli" , "Meiryo UI" , sans-serif;
 }
-
 img{
- border-radius:20px;   
+  border-radius: 20px;
 }
-
 .top-content{
-    text-align: center;
-    height: 180px;
-    width: 1000px;
-    display: block;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-left: auto;
+  text-align: center;
+  height: 180px;
+  width:1000px;
+  disolay: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .top-content .grades{
-    display: flex;
+  display: flex;
 }
-
 .top-content .grade{
-    font-family: "Mv Boli", "Meiryo UI", sans-serif;
-    font-size: 20px;
-    background-color: #cafafc;
-    outline: none;
-    border: none;
-    margin-right: 50px;
-    margin-left: 50px;
+  font-size: 20px;
+  background-color: #cafafc;
+  outline: none;
+  border: none;
+  margin-left: 50px;
+  margin-right: 50px;
 }
-
 button:focus{
-    outline: 0;
-}
-.top-content .selected-grade{
-    width: 1000px;
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
+  outline: 0; 
 }
 
-.top-content .selected-main{
-    font-size: 60px;
+.top-content .selected-grade{
+  width: 1000px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.top-content selected-main{
+  font-size: 60px;
 }
 
 .top-content .selected-grade .selected-header{
-    margin-right: auto;
-    margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .top-content .selected-grade img{
-    width: 300px;
-    height: 225px;
+  width: 300px;
+  height: 225px;
 }
 
 .top-content .selected-grade p{
-    font-size: 80px;
-    width: 300px;
-    margin: 20px 0;
-    text-align: center;
+  font-size: 80px;
+  width: 300px;
+  margin: 20px 0;
+  text-align: center;
 }
 
 .main-content{
-    text-align: center;
-    width: 1000px;
-    margin-right: auto;
-    margin-left: auto;
+  text-align: center;
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .player{
-    position: relative;
-    height: 570px;
-    width: 30%;
-    float: left;
-    margin-right: 1.6%;
-    margin-left: 1.6%;
+  position: relative;
+  height: 570px;
+  width: 30%;
+  float: left;
+  margin-right: 1.6%;
+  margin-left: 1.6%;
 }
 
 .main-content img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 300px;
-    width: 100%;
-    z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 100%;
+  z-index: 2;
 }
 
 span{
-    position: absolute;
-    display: block;
-    height: 50px;
-    width: 300px;
-    top: 250px;
-    text-align: center;
-    line-height: 50px;
-    background-color: white;
-    border-radius: 0 0 20px 20px;
-    opacity: 0;
-    z-index: 3;
-    
+  position: absolute;
+  display: block;
+  height: 50px;
+  width: 300px;
+  top: 250px;
+  text-align: center;
+  line-height: 50px;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  opacity: 0;
+  z-index: 3;
 }
 
 .main-content p{
-    position: absolute;
-    background-color: white;
-    texy-align: center;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: auto;
-    z-index: 1;
+  position: absolute;
+  background-color: white;
+  texy-align: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: auto;
+  z-index: 1;
 }
 
 .fifteen{
-    height: 1286px;
-    
+  height: 1286px;
 }
 
 .sixteen{
-    height: 1866px;
+  height: 1866px;
 }
 
 .sixteen .players{
-    height: 1184px;
+  height: 1184px;
 }
 
 .seventeen{
-    height: 1248px;
-    
+  height: 1248px;
 }
 
 .eighteen{
-    height: 3026px;
-    
+  height: 3026px;
 }
 
 .nineteen{
-    height: 4766px;
-    
+  height: 4766px;
 }
 
 .twenty{
-    height: 4766px;
-    
+  height: 4766px;
 }
