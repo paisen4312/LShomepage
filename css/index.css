@@ -10,6 +10,10 @@ body{
     font-family: "Mv Boli", "Meiryo UI", sans-serif;
 }
 
+h1{
+ font-size: 60px;   
+}
+
 img{
  border-radius:20px;   
 }
@@ -17,7 +21,7 @@ img{
 .main-content{
     text-align: center;
     width: 1000px;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-right: auto;
     margin-left: auto;
 }
