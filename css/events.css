@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
-.main-content{
-
-}
 
 .events-slides{
   posotion: relative
@@ -10,5 +7,5 @@
 
 .slide{
   display: block;
-  nargin: 100px;
+  margin: 100px;
 }
