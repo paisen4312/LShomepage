@@ -1,7 +1,7 @@
 'use strict';
 
 var header = $('<div>').addClass("contents").append('<a href="index.html">TOP PAGE</a>')
-.append('<a href="comingsoon.html">EVENTS</a>')
+.append('<a href="events.html">EVENTS</a>')
 .append('<a href="member.html">MEMBERS</a>')
 .append('<a href="comingsoon.html">NEWS</a>')
 .append('<a href="comingsoon.html">RESULT</a>')
@@ -11,7 +11,7 @@ var header = $('<div>').addClass("contents").append('<a href="index.html">TOP PA
 .append('<div class = "menu"><p class = "hub">MENU(開く)</p></div>')
 
 var footer = $('<div>').addClass("contents").append('<a href="index.html">TOP PAGE</a>')
-.append('<a href="comingsoon.html">EVENTS</a>')
+.append('<a href="events.html">EVENTS</a>')
 .append('<a href="member.html">MEMBERS</a>')
 .append('<a href="comingsoon.html">NEWS</a>')
 .append('<a href="comingsoon.html">RESULT</a>')
@@ -20,7 +20,7 @@ var footer = $('<div>').addClass("contents").append('<a href="index.html">TOP PA
 .append('<a href="history.html">HISTORY</a>')
 
   var menuContents = $('<div>').addClass("menu-contents").addClass("hidden-menu").append('<a href="index.html">TOP PAGE</a><br>')
-  .append('<a href="comingsoon.html">EVENTS</a><br>')
+  .append('<a href="events.html">EVENTS</a><br>')
   .append('<a href="member.html">MEMBERS</a><br>')
   .append('<a href="comingsoon.html">NEWS</a><br>')
   .append('<a href="comingsoon.html">RESULT</a><br>')
@@ -49,38 +49,41 @@ $('.menu').click(function(){
 
   }
 
-  if($(this).hasClass("back")){
-    
-   $(this).removeClass("back").children('.hub').text('MENU(開く)') 
-    
-  }else{
-   
-   $(this).addClass("back").children('.hub').text('MENU(閉じる)') 
-   
-  }
+  if($(this).hasClass("back")){
+    
+   $(this).removeClass("back").children('.hub').text('MENU(開く)') 
+    
+  }else{
+   
+   $(this).addClass("back").children('.hub').text('MENU(閉じる)') 
+   
+  }
 });
 
 $('.contents').children('a').hover(
-  function(){
-    
-    $(this).stop(true).animate({color: "yellow", "font-size": "27px"}, 500);
+  function(){
+    
+    $(this).stop(true).animate({color: "yellow", "font-size": "27px"}, 500);
 
-  },
-  function(){
-    
-    $(this).stop(true).animate({color: "yellow", "font-size": "20px"}, 500);
-    
-  });
+  },
+  function(){
+    
+    $(this).stop(true).animate({color: "white", "font-size": "20px"}, 500);
+    
+  });
 
 
 $('.menu-contents').children('a').hover(
-  function(){
-    
-    $(this).stop(true).animate({color: "yellow", "font-size": "32px"}, 500);
+  function(){
+    
+    $(this).stop(true).animate({color: "yellow", "font-size": "32px"}, 500);
 
-  },
-  function(){
-    
-    $(this).stop(true).animate({color: "yellow", "font-size": "24px"}, 500);
-    
-  });
+  },
+  function(){
+    
+    $(this).stop(true).animate({color: "white", "font-size": "24px"}, 500);
+    
+  });
+
+
+$('h1').typoShadow();
