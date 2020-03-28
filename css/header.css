@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-body{
-  font-family: "Mv Boli", "Meiryo UI", sans-serif;
-}
-
 /*ヘッダーのレイアウト*/
 .contents{
   z-index: 100;
@@ -21,10 +17,7 @@ body{
   opacity: 0.8;
   margin: 0;
 }
-.contents .menu{
-  display: none;
-  margin: 0;
-}
+
 .menu-contents{
   display: none;
 }
@@ -39,7 +32,6 @@ body{
   margin-right: 1%;
   line-height: 84px;
 }
-@media ( max-width : 1070px) {
 
   .contents {
    width: auto;
@@ -48,11 +40,11 @@ body{
     display: none;
   }
   .contents .menu {
-    font-size: 30px;
+    font-size: 40px;
     cursor: pointer;
     display: inline;
     color: white;
-    line-height: 42px;
+    line-height: 0;
   }
   
   .menu-contents {
@@ -67,4 +59,4 @@ body{
   .hidden-menu{
     display: none;
   }
-}
+
