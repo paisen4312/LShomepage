@@ -56,10 +56,13 @@ body{
   }
   
   .menu-contents {
-    font-size: 30px;
     color: white;
     margin-left: 10px;
     background-color: darkblue;
+  }
+
+  .menu-contents a{
+    font-size: 40px;
   }
   .hidden-menu{
     display: none;

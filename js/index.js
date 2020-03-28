@@ -57,10 +57,10 @@ $('.contents').children('a').hover(
 
 $('.menu-contents').children('a').hover(
     function(){
-        $(this).stop(true).animate({color: "red", "font-size": "32px"}, 500);
+        $(this).stop(true).animate({color: "red", "font-size": "60px"}, 500);
     },
     function(){
-        $(this).stop(true).animate({color: "white", "font-size": "24px"}, 500);
+        $(this).stop(true).animate({color: "white", "font-size": "40px"}, 500);
     });
     /*
      * Slideshow
