@@ -50,3 +50,9 @@ img{
 .border-bottom{
     border-bottom: currentColor 1px solid;
 }
+
+@media ( max-width : 900px) {
+    body{
+        width:900px;
+    }
+    }

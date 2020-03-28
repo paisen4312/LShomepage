@@ -38,7 +38,7 @@ button:focus{
   width: 1000px;
   display: flex;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: auto;
 }
 
 .top-content selected-main{
@@ -103,11 +103,12 @@ span{
 .main-content p{
   position: absolute;
   background-color: white;
-  texy-align: center;
+  text-align: center;
   top: 0;
   right: 0;
   left: 0;
   height: auto;
+  opacity: 0;
   z-index: 1;
 }
 

@@ -39,16 +39,14 @@ body{
 @media ( max-width : 900px) {
 
   .contents {
-    width: auto;
-  }
+   width: auto;
+  }
   .contents > a{
     display: none;
   }
   .contents .menu {
     font-size: 24px;
     cursor: pointer;
-    width: 192.68px;
-    float: left;
     display: inline;
     color: white;
     line-height: 42px;
@@ -56,7 +54,7 @@ body{
   
   .menu-contents {
     color: white;
-    left-margin: 10px;
+    margin-left: 10px;
     background-color: darkblue;
   }
   .hidden-menu{
