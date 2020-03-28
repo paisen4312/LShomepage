@@ -4,7 +4,7 @@ var header = $('<div>').addClass("contents").append('<a href="index.html">TOP PA
 .append('<a href="events.html">EVENTS</a>')
 .append('<a href="member.html">MEMBERS</a>')
 .append('<a href="comingsoon.html">NEWS</a>')
-.append('<a href="comingsoon.html">RESULT</a>')
+.append('<a href="comingsoon.html">RESULTS</a>')
 .append('<a href="https://twitter.com/waseda_ls2013">TWITTER</a>')
 .append('<a href="https://www.instagram.com/ls_waseda/?hl=ja">INSTAGRAM</a>')
 .append('<a href="history.html">HISTORY</a>')
@@ -14,7 +14,7 @@ var footer = $('<div>').addClass("contents").append('<a href="index.html">TOP PA
 .append('<a href="events.html">EVENTS</a>')
 .append('<a href="member.html">MEMBERS</a>')
 .append('<a href="comingsoon.html">NEWS</a>')
-.append('<a href="comingsoon.html">RESULT</a>')
+.append('<a href="comingsoon.html">RESULTS</a>')
 .append('<a href="https://twitter.com/waseda_ls2013">TWITTER</a>')
 .append('<a href="https://www.instagram.com/ls_waseda/?hl=ja">INSTAGRAM</a>')
 .append('<a href="history.html">HISTORY</a>')
@@ -23,7 +23,7 @@ var footer = $('<div>').addClass("contents").append('<a href="index.html">TOP PA
   .append('<a href="events.html">EVENTS</a><br>')
   .append('<a href="member.html">MEMBERS</a><br>')
   .append('<a href="comingsoon.html">NEWS</a><br>')
-  .append('<a href="comingsoon.html">RESULT</a><br>')
+  .append('<a href="comingsoon.html">RESULTS</a><br>')
   .append('<a href="https://twitter.com/waseda_ls2013">TWITTER</a><br>')
   .append('<a href="https://www.instagram.com/ls_waseda/?hl=ja">INSTAGRAM</a><br>')
   .append('<a href="history.html">HISTORY</a>')
@@ -63,7 +63,7 @@ $('.menu').click(function(){
 $('.contents').children('a').hover(
   function(){
     
-    $(this).stop(true).animate({color: "yellow", "font-size": "27px"}, 500);
+    $(this).stop(true).animate({color: "red", "font-size": "27px"}, 500);
 
   },
   function(){
@@ -76,7 +76,7 @@ $('.contents').children('a').hover(
 $('.menu-contents').children('a').hover(
   function(){
     
-    $(this).stop(true).animate({color: "yellow", "font-size": "32px"}, 500);
+    $(this).stop(true).animate({color: "red", "font-size": "32px"}, 500);
 
   },
   function(){
@@ -85,5 +85,49 @@ $('.menu-contents').children('a').hover(
     
   });
 
+    /*
+     * Slideshow
+     */
+    // slideshow クラスを持った要素ごとに処理を実行
+    $('.slideshow').each(function () {
+
+        var $slides = $(this).find('img'), // すべてのスライド
+            slideCount = $slides.length,   // スライドの点数
+            currentIndex = 0;              // 現在のスライドを示すインデックス
+
+        // 1 番目のスライドをフェードインで表示
+        $slides.eq(currentIndex).fadeIn();
+
+        // 7500 ミリ秒ごとに showNextSlide 関数を実行
+        setInterval(showNextSlide, 5000);
+
+        function showNextSlide(){
+                var nextIndex = fadeOutSlide();
+                setTimeout(function(){fadeInSlide(nextIndex)} , 1000);
+        }
+
+        // 次のスライドを表示する関数
+        function fadeOutSlide () {
+
+            // 次に表示するスライドのインデックス
+            // (もし最後のスライドなら最初に戻る)
+            var nextIndex = (currentIndex + 1) % slideCount;
+
+            // 現在のスライドをフェードアウト
+            $slides.eq(currentIndex).fadeOut(1000);
+            
+            return nextIndex;
+        }
+
+        // 次のスライドを表示する関数
+        function fadeInSlide (nextIndex) {
+
+            // 次のスライドをフェードイン
+            $slides.eq(nextIndex).fadeIn(1000);
+
+            // 現在のスライドのインデックスを更新
+            currentIndex = nextIndex;
+        }
+    });
 
 $('h1').typoShadow();

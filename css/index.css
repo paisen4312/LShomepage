@@ -3,15 +3,14 @@
 /*トップページのレイアウト*/
 
 body{
-    height: 1500px;
     margin: auto;
     background-color: #cafafc;
-    width: auto;
-    font-family: "Mv Boli", "Meiryo UI", sans-serif;
+    width: 1400px;
 }
 
 h1{
- font-size: 60px;   
+    font-family: Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 60px;   
 }
 
 img{
@@ -20,21 +19,34 @@ img{
 
 .main-content{
     text-align: center;
-    width: 1000px;
     margin-top: 100px;
     margin-right: auto;
     margin-left: auto;
 }
 
+/* 写真を中央に寄せる */
 .main-content .pic img{
+    display: none;
     text-align: center;
     width: 80%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
+
 .main-content p{
+    font-family: Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
     width: 80%;
     margin-right: auto;
     margin-left: auto;
+}
+/* 赤字にするためのクラス */
+.red{
+    color: red;
+    font-weight: bold;
+}
+
+.border-bottom{
+    border-bottom: currentColor 1px solid;
 }
