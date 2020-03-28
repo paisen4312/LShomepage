@@ -5,12 +5,7 @@
 body{
     margin: auto;
     background-color: #cafafc;
-    width: 1400px;
-}
-@media(max-width:1000px){
-    body{
-        width: 1000px;
-    }
+    width: 1200px;
 }
 
 h1{
