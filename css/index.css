@@ -46,6 +46,9 @@ img{
     color: red;
     font-weight: bold;
 }
+.big{
+    font-size: 150%;
+}
 
 .border-bottom{
     border-bottom: currentColor 1px solid;

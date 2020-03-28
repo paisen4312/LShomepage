@@ -1,11 +1,18 @@
 @charset "UTF-8";
 
+.events{
+  margin: 0;
+}
 
 .events-slides{
-  posotion: relative
+  position: relative
 }
 
 .slide{
   display: block;
-  margin: 100px;
+  margin: 0 100px;
+}
+
+.slide p{
+  font-size: 150%;
 }
