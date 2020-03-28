@@ -13,19 +13,19 @@ $('.grade').click(function(){
 $(document)
 .on('mouseover','.player', function(){
     $(this).find('span').stop(true).animate({opacity: 0.8}, 1000);
-    $(this).find('p').stop(true).animate({top: '300px'}, 500);
+    $(this).find('p').stop(true).animate({top: '300px', opacity: 1}, 500);
 })
 .on('mouseout','.player', function(){
     $(this).find('span').stop(true).animate({opacity: 0}, 1000);
-    $(this).find('p').stop(true).animate({top: 0}, 500);
+    $(this).find('p').stop(true).animate({top: 0, opacity: 0}, 500);
 })
 .on('click','.player', function(){
   if($(this).find('span').hasClass('info')){
     $(this).find('span').removeClass('info').stop(true).animate({opacity: 0}, 1000);
-    $(this).find('p').stop(true).animate({top: 0}, 500);
+    $(this).find('p').stop(true).animate({top: 0, opacity: 0}, 500);
   }else{
     $(this).find('span').addClass('info').stop(true).animate({opacity: 0.8}, 1000);
-    $(this).find('p').stop(true).animate({top: '300px'}, 500);
+    $(this).find('p').stop(true).animate({top: '300px', opacity: 1}, 500);
   }
 });
 
@@ -35,7 +35,7 @@ function changeMember(grade){
     var leftPicRow = $('<img>').addClass("selected-header first-pic").attr("src" , "img/" + grade + "/1.jfif");
     $('.first-pic').replaceWith(leftPicRow);
 
-    var row = $('<p>').addClass("selected-header selected-main").text(grade);
+    var row = $('<h1>').addClass("selected-header selected-main").text(grade);
     $('.selected-main').replaceWith(row);
 
     var rightPicRow = $('<img>').addClass("selected-header second-pic").attr("src" , "img/" + grade + "/2.jfif");
