@@ -1,13 +1,13 @@
 'use strict';
 
-var header = $('<div>').addClass("contents")/*.append('<a href="index.html">TOPPAGE</a>')
+var header = $('<div>').addClass("contents").append('<a href="index.html">TOPPAGE</a>')
 .append('<a href="events.html">EVENTS</a>')
 .append('<a href="member.html">MEMBERS</a>')
 .append('<a href="comingsoon.html">NEWS</a>')
 .append('<a href="comingsoon.html">RESULTS</a>')
 .append('<a href="https://twitter.com/waseda_ls2013">TWITTER</a>')
 .append('<a href="https://www.instagram.com/ls_waseda/?hl=ja">INSTAGRAM</a>')
-.append('<a href="history.html">HISTORY</a>')*/
+.append('<a href="history.html">HISTORY</a>')
 .append('<div class = "menu"><p class = "hub">MENU(開く)</p></div>')
 
 

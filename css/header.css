@@ -48,11 +48,11 @@ body{
     display: none;
   }
   .contents .menu {
-    font-size: 30px;
+    font-size: 40px;
     cursor: pointer;
     display: inline;
     color: white;
-    line-height: 42px;
+    line-height: 0px;
   }
   
   .menu-contents {
