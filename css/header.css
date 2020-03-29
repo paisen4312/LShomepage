@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body{
+  font-family: "Mv Boli", "Meiryo UI", sans-serif;
+}
+
 /*ヘッダーのレイアウト*/
 .contents{
   z-index: 100;
@@ -17,7 +21,10 @@
   opacity: 0.8;
   margin: 0;
 }
-
+.contents .menu{
+  display: none;
+  margin: 0;
+}
 .menu-contents{
   display: none;
 }
@@ -32,6 +39,7 @@
   margin-right: 1%;
   line-height: 84px;
 }
+@media ( max-width : 1070px) {
 
   .contents {
    width: auto;
@@ -40,11 +48,11 @@
     display: none;
   }
   .contents .menu {
-    font-size: 40px;
+    font-size: 30px;
     cursor: pointer;
     display: inline;
     color: white;
-    line-height: 0;
+    line-height: 42px;
   }
   
   .menu-contents {
@@ -59,4 +67,4 @@
   .hidden-menu{
     display: none;
   }
-
+}
