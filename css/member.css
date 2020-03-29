@@ -1,23 +1,30 @@
 @charset "UTF-8";
 
 body{
-  margin: auto;
+  margin-bottom: 200px;
   background-color: #cafafc;
   width: auto;
+}
+.main-content{
+  margin:0; 
 }
 img{
   border-radius: 20px;
 }
 .top-content{
   text-align: center;
-  height: 360px;
+  height:450px;
   width:1000px;
   display: block;
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
 }
-
+ul {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
 .top-content .grades{
   display: flex;
   justify-content: center;
@@ -75,7 +82,7 @@ button:focus{
   width: 300px;
   margin: 20px 0;
   text-align: center;
-  line-height: 200px;
+  line-height: 180px;
 }
 
 .main-content{
@@ -125,16 +132,35 @@ span{
   z-index: 3;
 }
 
-.main-content p{
+.player p{
   position: absolute;
   background-color: white;
   text-align: center;
+  font-size: 100%;
   top: 0;
   right: 0;
   left: 0;
   height: auto;
-  opacity: 0;
+  opacity: 1;
   z-index: 1;
+}
+h3{
+  margin-top: 50px;
+  font-size: 40px;
+}
+li{
+  font-size: 40px;
+
+}
+
+.history p{
+  font-size: 30px;
+}
+
+.history .histories img{
+  position: relative;
+  width: 400px;
+  height: 300px;
 }
 
 .fifteen{
