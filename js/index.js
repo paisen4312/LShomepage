@@ -1,23 +1,15 @@
 'use strict';
 
-var header = $('<div>').addClass("contents").append('<a href="index.html">TOPPAGE</a>')
+var header = $('<div>').addClass("contents")/*.append('<a href="index.html">TOPPAGE</a>')
 .append('<a href="events.html">EVENTS</a>')
 .append('<a href="member.html">MEMBERS</a>')
 .append('<a href="comingsoon.html">NEWS</a>')
 .append('<a href="comingsoon.html">RESULTS</a>')
 .append('<a href="https://twitter.com/waseda_ls2013">TWITTER</a>')
 .append('<a href="https://www.instagram.com/ls_waseda/?hl=ja">INSTAGRAM</a>')
-.append('<a href="history.html">HISTORY</a>')
+.append('<a href="history.html">HISTORY</a>')*/
 .append('<div class = "menu"><p class = "hub">MENU(開く)</p></div>')
 
-var footer = $('<div>').addClass("contents").append('<a href="index.html">TOPPAGE</a>')
-.append('<a href="events.html">EVENTS</a>')
-.append('<a href="member.html">MEMBERS</a>')
-.append('<a href="comingsoon.html">NEWS</a>')
-.append('<a href="comingsoon.html">RESULTS</a>')
-.append('<a href="https://twitter.com/waseda_ls2013">TWITTER</a>')
-.append('<a href="https://www.instagram.com/ls_waseda/?hl=ja">INSTAGRAM</a>')
-.append('<a href="history.html">HISTORY</a>')
 
   var menuContents = $('<div>').addClass("menu-contents").addClass("hidden-menu").append('<a href="index.html">TOPPAGE</a><br>')
   .append('<a href="events.html">EVENTS</a><br>')
@@ -29,7 +21,6 @@ var footer = $('<div>').addClass("contents").append('<a href="index.html">TOPPAG
   .append('<a href="history.html">HISTORY</a>')
 
 $('#header').append(header);
-$('#footer').append(footer);
 $('.menu').append(menuContents);
 
 $('.menu').click(function(){
@@ -57,10 +48,10 @@ $('.contents').children('a').hover(
 
 $('.menu-contents').children('a').hover(
     function(){
-        $(this).stop(true).animate({color: "red", "font-size": "32px"}, 500);
+        $(this).stop(true).animate({color: "red", "font-size": "60px"}, 500);
     },
     function(){
-        $(this).stop(true).animate({color: "white", "font-size": "24px"}, 500);
+        $(this).stop(true).animate({color: "white", "font-size": "40px"}, 500);
     });
     /*
      * Slideshow
@@ -100,4 +91,27 @@ $('.menu-contents').children('a').hover(
         }
     });
 
-$('h1').typoShadow();
+var pc_width = 1080;
+var device = (screen.width < 600 ? 'sp' : 'pc');
+var view_mode = (device == 'pc' || document.cookie.indexOf('view_mode=pc') != -1 ? 'pc' : 'sp');
+if (device == 'sp' && view_mode == 'pc') {
+    document.getElementsByName('viewport')[0].setAttribute('content', 'width=' + pc_width + ',initial-scale=1');
+}
+
+$(function () {
+    if (device == 'sp') {
+        if (view_mode == 'pc') {
+            $('.sp-mode').on('click', function () {
+                var date = new Date();
+                date.setTime(0);
+                document.cookie = 'view_mode=;expires='+date.toGMTString();
+                location.reload(false);
+            }).show();
+        } else {
+            $('.pc-mode').on('click', function () {
+                document.cookie = 'view_mode=pc';
+                location.reload(false);
+            }).show();
+        }
+    }
+});
