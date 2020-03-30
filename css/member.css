@@ -28,6 +28,7 @@ ul {
 .top-content .grades{
   display: flex;
   justify-content: center;
+  cursor: default;
   
 }
 .top-content .grade{
@@ -63,7 +64,7 @@ button:focus{
   margin-left: auto;
 }
 
-.top-content selected-main{
+.top-content .selected-main{
   font-size: 60px;
 }
 
@@ -150,8 +151,8 @@ h3{
 }
 li{
   font-size: 40px;
-
 }
+
 
 .history p{
   font-size: 30px;
@@ -159,8 +160,11 @@ li{
 
 .history .histories img{
   position: relative;
-  width: 400px;
-  height: 300px;
+  width: 800px;
+  height: 600px;
+}
+.last{
+  margin-bottom: 100px;
 }
 
 .fifteen{

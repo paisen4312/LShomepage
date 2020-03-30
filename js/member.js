@@ -32,13 +32,13 @@ $(document)
 
 function changeMember(grade){
 
-    var leftPicRow = $('<img>').addClass("selected-header first-pic").attr("src" , "img/" + grade + "/1.jfif");
+    var leftPicRow = $('<img>').addClass("selected-header first-pic").attr("src" , "img/" + grade + "/1.jpeg");
     $('.first-pic').replaceWith(leftPicRow);
 
     var row = $('<h1>').addClass("selected-header selected-main").text(grade);
     $('.selected-main').replaceWith(row);
 
-    var rightPicRow = $('<img>').addClass("selected-header second-pic").attr("src" , "img/" + grade + "/2.jfif");
+    var rightPicRow = $('<img>').addClass("selected-header second-pic").attr("src" , "img/" + grade + "/2.jpeg");
     $('.second-pic').replaceWith(rightPicRow);
 
     $('#members').load("member/" + grade + ".html");
