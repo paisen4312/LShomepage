@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body{
-  width: auto;
+  width: 1200x;
+  margin:auto;
 }
 
 .events-slides{

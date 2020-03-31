@@ -4,10 +4,9 @@ body{
   margin-bottom: 200px;
   background-color: #cafafc;
   width:1200px;
+  margin:auto;
 }
-.main-content{
-  margin:0; 
-}
+
 .top-content{
   text-align: center;
   height:600px;
