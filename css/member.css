@@ -3,13 +3,10 @@
 body{
   margin-bottom: 200px;
   background-color: #cafafc;
-  width: auto;
+  width:1200px;
 }
 .main-content{
   margin:0; 
-}
-img{
-  border-radius: 0px;
 }
 .top-content{
   text-align: center;

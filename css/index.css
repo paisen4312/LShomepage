@@ -5,7 +5,7 @@
 body{
     margin: auto;
     background-color: #cafafc;
-    width: auto;
+    width:1200px;
     font-family: Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
@@ -54,30 +54,8 @@ h1{
 .rishu{
     margin-bottom: 50px;
 }
-.shisen{
-    position: relative;
-  }
-  
-  .shisen img{
-    width:100%;
-    display: initial;
-    position: absolute;
-    left:0;
-  
-  }
-  .shisen p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    position: absolute;
-    font-size: 700%;
-    color:rgb(248, 247, 247);
-    margin: 0;
-    left:10%;
-  }
-  .shisen .first-align{
-    top:80px;
-  
-  }
-  .shisen .second-align{
-    top:630px;
-  
-  }
+.shisen img{
+width:100%;
+display: initial;
+left:0;
+}
