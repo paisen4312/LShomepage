@@ -93,26 +93,24 @@ h2{
 }
 .player{
   position: relative;
+  display: inline-flex;
   height: 570px;
-  width: 30%;
-  float: left;
+  width: 300px;
   margin-right: 1.6%;
   margin-left: 1.6%;
 }
 
-.main-content img{
+.player img{
   position: absolute;
-  top: 0;
-  left: 60px;
   height: 300px;
   width: 300px;
+  right:0;
   z-index: 2;
 }
 
 span{
   position: absolute;
   display: block;
-  left: 60px;
   height: 50px;
   width: 300px;
   top: 250px;
@@ -132,7 +130,6 @@ span{
   top: 0;
   right: 0;
   left: 0;
-  left: 60px;
   height: auto;
   opacity: 1;
   z-index: 1;
@@ -166,28 +163,8 @@ li{
 .shisen img{
   width:100%;
   display: initial;
-  position: absolute;
   height:initial;
-  left:0;
-  z-index: 0;
 }
-.shisen p{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  position: absolute;
-  font-size: 700%;
-  color:rgb(248, 247, 247);
-  margin: 0;
-  left:10%;
-}
-.shisen .first-align{
-  top:100px;
-
-}
-.shisen .second-align{
-  top:630px;
-
-}
-
 .fifteen{
   height: 1286px;
 }
@@ -209,7 +186,7 @@ li{
 }
 
 .nineteen{
-  height: 4766px;
+  height: 5000px;
 }
 
 .twenty{
