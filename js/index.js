@@ -52,7 +52,11 @@ $('.menu-contents').children('a').hover(
     },
     function(){
         $(this).stop(true).animate({color: "white", "font-size": "40px"}, 500);
-    });
+    }
+);
+
+$('.shisen').load("shisen.html");
+
     /*
      * Slideshow
      */

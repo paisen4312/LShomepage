@@ -1,5 +1,7 @@
 .main-content{
-  width: 1000px;
-  padding-top: 300px;
-  height: 1500px;
+  width: auto;
+}
+
+h1{
+  margin:400px 200px;
 }

@@ -14,10 +14,6 @@ h1{
     font-size: 60px;   
 }
 
-img{
- border-radius:20px;   
-}
-
 .main-content{
     text-align: center;
     margin-top: 100px;
@@ -29,7 +25,7 @@ img{
 .main-content .pic img{
     display: none;
     text-align: center;
-    width: 80%;
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -54,3 +50,34 @@ img{
 .border-bottom{
     border-bottom: currentColor 1px solid;
 }
+
+.rishu{
+    margin-bottom: 50px;
+}
+.shisen{
+    position: relative;
+  }
+  
+  .shisen img{
+    width:100%;
+    display: initial;
+    position: absolute;
+    left:0;
+  
+  }
+  .shisen p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    font-size: 700%;
+    color:rgb(248, 247, 247);
+    margin: 0;
+    left:10%;
+  }
+  .shisen .first-align{
+    top:80px;
+  
+  }
+  .shisen .second-align{
+    top:630px;
+  
+  }

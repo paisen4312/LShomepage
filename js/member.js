@@ -50,8 +50,8 @@ function changeMember(grade){
 });
 $('.grade').hover(
     function(){
-        $(this).stop(true).animate({color: "red", "font-size": "40px"}, 500);
+        $(this).stop(true).animate({color: "red", "font-size": "70px"}, 500);
     },
     function(){
-        $(this).stop(true).animate({color: "black", "font-size": "30px"}, 500);
+        $(this).stop(true).animate({color: "black", "font-size": "50px"}, 500);
     });

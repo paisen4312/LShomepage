@@ -9,12 +9,12 @@ body{
   margin:0; 
 }
 img{
-  border-radius: 20px;
+  border-radius: 0px;
 }
 .top-content{
   text-align: center;
-  height:450px;
-  width:1000px;
+  height:600px;
+  width:auto;
   display: block;
   margin-top: 100px;
   margin-left: auto;
@@ -34,9 +34,9 @@ ul {
 .top-content .grade{
   display: flex;
   justify-content: center;
-  height: 70px;
-  width:230px;
-  font-size: 30px;
+  height: 100px;
+  width:400px;
+  font-size: 50px;
   background-color: #cafafc;
   outline: none;
   border: none;
@@ -45,9 +45,9 @@ ul {
 .top-content .regend-grade{
   display: flex;
   justify-content: center;
-  height: 70px;
-  width:320px;
-  font-size: 30px;
+  height: 100px;
+  width:400px;
+  font-size: 50px;
   background-color: #cafafc;
   outline: none;
   border: none;
@@ -58,14 +58,10 @@ button:focus{
 }
 
 .top-content .selected-grade{
-  width: 1000px;
+  width: auto;
   display: flex;
   margin-right: auto;
   margin-left: auto;
-}
-
-.top-content .selected-main{
-  font-size: 60px;
 }
 
 .top-content .selected-grade .selected-header{
@@ -74,27 +70,25 @@ button:focus{
 }
 
 .top-content .selected-grade img{
-  width: 300px;
-  height: 225px;
+  width: 400px;
+  height: 300px;
 }
 
 .top-content .selected-grade h1{
-  font-size: 80px;
+  font-size: 100px;
   width: 300px;
-  margin: 20px 0;
+  margin: 10px 0;
   text-align: center;
-  line-height: 180px;
+  line-height: 250px;
 }
 
 .main-content{
   text-align: center;
-  width: 1000px;
+  width: auto;
   margin-right: auto;
   margin-left: auto;
 }
-h1{
-  font-size: 80px;
-}
+
 
 h2{
   font-size: 60px;
@@ -113,22 +107,22 @@ h2{
 .main-content img{
   position: absolute;
   top: 0;
-  left: 0;
+  left: 60px;
   height: 300px;
-  width: 100%;
+  width: 300px;
   z-index: 2;
 }
 
 span{
   position: absolute;
   display: block;
+  left: 60px;
   height: 50px;
   width: 300px;
   top: 250px;
   text-align: center;
   line-height: 50px;
   background-color: white;
-  border-radius: 0 0 20px 20px;
   opacity: 0;
   z-index: 3;
 }
@@ -136,11 +130,13 @@ span{
 .player p{
   position: absolute;
   background-color: white;
+  width: 300px;
   text-align: center;
   font-size: 100%;
   top: 0;
   right: 0;
   left: 0;
+  left: 60px;
   height: auto;
   opacity: 1;
   z-index: 1;
@@ -165,6 +161,35 @@ li{
 }
 .last{
   margin-bottom: 100px;
+}
+
+.shisen{
+  position: relative;
+}
+
+.shisen img{
+  width:100%;
+  display: initial;
+  position: absolute;
+  height:initial;
+  left:0;
+  z-index: 0;
+}
+.shisen p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: absolute;
+  font-size: 700%;
+  color:rgb(248, 247, 247);
+  margin: 0;
+  left:10%;
+}
+.shisen .first-align{
+  top:100px;
+
+}
+.shisen .second-align{
+  top:630px;
+
 }
 
 .fifteen{
