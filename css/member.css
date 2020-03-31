@@ -25,30 +25,20 @@ ul {
   display: flex;
   justify-content: center;
   cursor: default;
-  
 }
+
 .top-content .grade{
   display: flex;
   justify-content: center;
   height: 100px;
-  width:400px;
+  width:500px;
   font-size: 50px;
   background-color: #cafafc;
   outline: none;
   border: none;
 
 }
-.top-content .regend-grade{
-  display: flex;
-  justify-content: center;
-  height: 100px;
-  width:400px;
-  font-size: 50px;
-  background-color: #cafafc;
-  outline: none;
-  border: none;
 
-}
 button:focus{
   outline: 0; 
 }
