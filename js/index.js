@@ -57,65 +57,46 @@ $('.menu-contents').children('a').hover(
 
 $('.shisen').load("shisen.html");
 
-    /*
-     * Slideshow
-     */
-    // slideshow クラスを持った要素ごとに処理を実行
-    $('.slideshow').each(function () {
-        var $slides = $(this).find('img'), // すべてのスライド
-            slideCount = $slides.length,   // スライドの点数
-            currentIndex = 0;              // 現在のスライドを示すインデックス
-        // 1 番目のスライドをフェードインで表示
-        $slides.eq(currentIndex).fadeIn();
-        // 7500 ミリ秒ごとに showNextSlide 関数を実行
-        setInterval(showNextSlide, 5000);
+/*
+    * Slideshow
+    */
+// slideshow クラスを持った要素ごとに処理を実行
+$('.slideshow').each(function () {
+    var $slides = $(this).find('img'), // すべてのスライド
+        slideCount = $slides.length,   // スライドの点数
+        currentIndex = 0;              // 現在のスライドを示すインデックス
+    // 1 番目のスライドをフェードインで表示
+    $slides.eq(currentIndex).fadeIn();
+    // 7500 ミリ秒ごとに showNextSlide 関数を実行
+    setInterval(showNextSlide, 5000);
 
-        //フェードアウト、フェードインを時間差をおいて行う関数
-        function showNextSlide(){
-                var nextIndex = fadeOutSlide();
-                setTimeout(function(){fadeInSlide(nextIndex)} , 1000);
-        }
-
-        // 次のスライドを表示する関数
-        function fadeOutSlide () {
-            // 次に表示するスライドのインデックス
-            // (もし最後のスライドなら最初に戻る)
-            var nextIndex = (currentIndex + 1) % slideCount;
-            // 現在のスライドをフェードアウト
-            $slides.eq(currentIndex).fadeOut(1000);
-            return nextIndex;
-        }
-
-        // 次のスライドを表示する関数
-        function fadeInSlide (nextIndex) {
-            // 次のスライドをフェードイン
-            $slides.eq(nextIndex).fadeIn(1000);
-            // 現在のスライドのインデックスを更新
-            currentIndex = nextIndex;
-        }
-    });
-
-var pc_width = 1080;
-var device = (screen.width < 600 ? 'sp' : 'pc');
-var view_mode = (device == 'pc' || document.cookie.indexOf('view_mode=pc') != -1 ? 'pc' : 'sp');
-if (device == 'sp' && view_mode == 'pc') {
-    document.getElementsByName('viewport')[0].setAttribute('content', 'width=' + pc_width + ',initial-scale=1');
-}
-
-$(function () {
-    if (device == 'sp') {
-        if (view_mode == 'pc') {
-            $('.sp-mode').on('click', function () {
-                var date = new Date();
-                date.setTime(0);
-                document.cookie = 'view_mode=;expires='+date.toGMTString();
-                location.reload(false);
-            }).show();
-        } else {
-            $('.pc-mode').on('click', function () {
-                document.cookie = 'view_mode=pc';
-                location.reload(false);
-            }).show();
-        }
+    //フェードアウト、フェードインを時間差をおいて行う関数
+    function showNextSlide(){
+            var nextIndex = fadeOutSlide();
+            setTimeout(function(){fadeInSlide(nextIndex)} , 1000);
     }
+
+    // 次のスライドを表示する関数
+    function fadeOutSlide () {
+        // 次に表示するスライドのインデックス
+        // (もし最後のスライドなら最初に戻る)
+        var nextIndex = (currentIndex + 1) % slideCount;
+        // 現在のスライドをフェードアウト
+        $slides.eq(currentIndex).fadeOut(1000);
+        return nextIndex;
+    }
+
+    // 次のスライドを表示する関数
+    function fadeInSlide (nextIndex) {
+        // 次のスライドをフェードイン
+        $slides.eq(nextIndex).fadeIn(1000);
+        // 現在のスライドのインデックスを更新
+        currentIndex = nextIndex;
+    }
+});
+
+$('.gasshuku').hover(function(){
+
+    $(this).animate({})
+
 });

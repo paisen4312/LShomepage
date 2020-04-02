@@ -1,6 +1,7 @@
 .main-content{
   width:1200px;
   margin:auto;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
 
 h1{

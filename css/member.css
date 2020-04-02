@@ -53,6 +53,7 @@ button:focus{
 .top-content .selected-grade .selected-header{
   margin-right: auto;
   margin-left: auto;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
 
 .top-content .selected-grade img{
@@ -80,6 +81,7 @@ h2{
   font-size: 60px;
   margin-top: 0;
   margin-bottom: 50px;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
 .player{
   position: relative;
@@ -88,6 +90,7 @@ h2{
   width: 300px;
   margin-right: 1.6%;
   margin-left: 1.6%;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
 
 .player img{
@@ -132,9 +135,13 @@ li{
   font-size: 40px;
 }
 
+.histories{
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
 
 .history p{
   font-size: 30px;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
 
 .history .histories img{
