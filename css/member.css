@@ -81,7 +81,6 @@ h2{
   font-size: 60px;
   margin-top: 0;
   margin-bottom: 50px;
-  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
 .player{
   position: relative;
@@ -135,19 +134,15 @@ li{
   font-size: 40px;
 }
 
-.histories{
-  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
-}
-
 .history p{
   font-size: 30px;
-  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
 
 .history .histories img{
   position: relative;
   width: 800px;
   height: 600px;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
 .last{
   margin-bottom: 100px;

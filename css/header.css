@@ -38,6 +38,7 @@ body{
   margin-left: 1%;
   margin-right: 1%;
   line-height: 84px;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
 @media ( max-width : 1070px) {
 
@@ -64,6 +65,7 @@ body{
   .menu-contents a{
     margin: 50px 0;
     font-size: 40px;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
   }
   .hidden-menu{
     display: none;

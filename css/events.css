@@ -11,10 +11,12 @@ body{
 .slide{
   display: block;
   margin: 0 50px;
-  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
-
 }
 
 .slide p{
   font-size: 150%;
+}
+
+img{
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
