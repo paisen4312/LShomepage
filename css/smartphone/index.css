@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/*トップページのレイアウト*/
+
+body{
+    margin: auto;
+    background-color: #cafafc;
+    width:1200px;
+    font-family: Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+h1{
+
+    font-size: 60px;   
+}
+
+.main-content{
+    text-align: center;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* 写真を中央に寄せる */
+.main-content .pic img{
+    display: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
+
+
+.main-content p{
+    font-family: Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 150%;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* 赤字にするためのクラス */
+.red{
+    color: red;
+    font-weight: bold;
+}
+.big{
+    font-size: 150%;
+}
+
+.border-bottom{
+    border-bottom: currentColor 1px solid;
+}
+
+.rishu{
+    margin-bottom: 50px;
+}
+.shisen img{
+width:100%;
+display: initial;
+left:0;
+}

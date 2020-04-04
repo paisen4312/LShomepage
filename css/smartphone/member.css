@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+body{
+  margin-bottom: 200px;
+  background-color: #cafafc;
+  width:1200px;
+  margin:auto;
+}
+
+.top-content{
+  text-align: center;
+  height:600px;
+  width:auto;
+  display: block;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul {
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+.top-content .grades{
+  display: flex;
+  justify-content: center;
+  cursor: default;
+}
+
+.top-content .grade{
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width:500px;
+  font-size: 50px;
+  background-color: #cafafc;
+  outline: none;
+  border: none;
+
+}
+
+button:focus{
+  outline: 0; 
+}
+
+.top-content .selected-grade{
+  width: auto;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.top-content .selected-grade .selected-header{
+  margin-right: auto;
+  margin-left: auto;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
+
+.top-content .selected-grade img{
+  width: 400px;
+  height: 300px;
+}
+
+.top-content .selected-grade h1{
+  font-size: 100px;
+  width: 300px;
+  margin: 10px 0;
+  text-align: center;
+  line-height: 250px;
+}
+
+.main-content{
+  text-align: center;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+h2{
+  font-size: 60px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.player{
+  position: relative;
+  display: inline-flex;
+  height: 570px;
+  width: 300px;
+  margin-right: 1.6%;
+  margin-left: 1.6%;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
+
+.player img{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  right:0;
+  z-index: 2;
+}
+
+span{
+  position: absolute;
+  display: block;
+  height: 50px;
+  width: 300px;
+  top: 250px;
+  text-align: center;
+  line-height: 50px;
+  background-color: white;
+  opacity: 0;
+  z-index: 3;
+}
+
+.player p{
+  position: absolute;
+  background-color: white;
+  width: 300px;
+  text-align: center;
+  font-size: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: auto;
+  opacity: 1;
+  z-index: 1;
+}
+h3{
+  margin-top: 50px;
+  font-size: 40px;
+}
+li{
+  font-size: 40px;
+}
+
+.history p{
+  font-size: 30px;
+}
+
+.history .histories img{
+  position: relative;
+  width: 800px;
+  height: 600px;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}
+.last{
+  margin-bottom: 100px;
+}
+
+.shisen{
+  position: relative;
+}
+
+.shisen img{
+  width:100%;
+  display: initial;
+  height:initial;
+}
+.fifteen{
+  height: 1286px;
+}
+
+.sixteen{
+  height: 1866px;
+}
+
+.sixteen .players{
+  height: 1184px;
+}
+
+.seventeen{
+  height: 1248px;
+}
+
+.eighteen{
+  height: 3026px;
+}
+
+.nineteen{
+  height: 5000px;
+}
+
+.twenty{
+  height: 4766px;
+}

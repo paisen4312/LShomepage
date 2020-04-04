@@ -55,8 +55,6 @@ $('.menu-contents').children('a').hover(
     }
 );
 
-$('.shisen').load("shisen.html");
-
 /*
     * Slideshow
     */

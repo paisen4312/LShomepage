@@ -1,7 +1,7 @@
 $(function(){
 
-$('#members').load("member/19th.html");
-$('#regends').load("member/history.html");
+$('#members').load("../member/19th.html");
+$('#regends').load("../member/history.html");
 
 $('.grade').click(function(){
     $('.main-content').fadeOut(1000);
