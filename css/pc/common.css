@@ -1,0 +1,113 @@
+body{
+    margin: auto;
+    background-color: #cafafc;
+    width:1400px;
+    font-family: Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+main{
+    display: flex;
+    width: 1400px
+}
+
+.main-content{
+    width: 1100px;
+    text-align: center;
+}
+
+.main-side , .member-main-side{
+    width:300px;
+    margin:0 10px;
+    line-height: 100px;
+}
+
+.view-change , .member-view-change{
+    margin-top: 100px;
+    height: 50px;
+    width:100％;
+    font-size: 30px;
+    background-color: yellow;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.view-change a{
+    color: black;
+    text-decoration: none;
+}
+
+.member-view-change a{
+    color: black;
+    text-decoration: none;
+}
+
+.side-title{
+    height:100px;
+    background-image: url('../../img/background/homebase.jpeg');
+    background-size: contain;
+    margin:5px 0;
+    font-size: 40px;
+    color: black;
+}
+
+.main-side p{
+    text-align: center;
+}
+
+.member-main-side p{
+    text-align: center;
+}
+
+.infomation-content{
+    height:100px;
+    margin:5px 0;
+    background-image: url('../../img/background/green.jpeg');
+
+}
+
+.infomation-content p{
+    font-size:30px;
+    color: white;
+    line-height: 50px;
+    margin: 0;
+}
+
+.main-side img{
+    width: 300px;
+    height: 100px;
+}
+
+.member-main-side img{
+    width: 300px;
+    height: 100px;
+}
+
+.sponcer-content{
+    height:100px;
+    margin:5px 0;
+    background-image: url('../../img/background/green.jpeg');
+    text-align: center;
+}
+
+.sponcer-content a{
+    font-size:40px;
+    width: 300px;
+    color: white;
+    line-height: 100px;
+    margin: auto;
+    text-decoration: none;
+}
+
+/* 赤字にするためのクラス */
+.red{
+    color: red;
+    font-weight: bold;
+}
+.big{
+    font-size: 150%;
+}
+
+.border-bottom{
+    border-bottom: currentColor 1px solid;
+}

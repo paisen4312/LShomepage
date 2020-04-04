@@ -1,11 +1,7 @@
 $(function(){
 
-$('#members').load("../member/19th.html");
-$('#regends').load("../member/history.html");
-
 $('.grade').click(function(){
-    $('.main-content').fadeOut(1000);
-    $('.selected-grade').fadeOut(1000);
+    $('body').fadeOut(1000);
     var grade = $(this).attr("id");
     setTimeout(function(){changeMember(grade)} , 2000);
 });
@@ -30,28 +26,33 @@ $(document)
 });
 
 
-function changeMember(grade){
+ function changeMember(grade){
+    $(window).load(function() {
+        $('body').fadeIn(800);
+    });
+ };
+//     var leftPicRow = $('<img>').addClass("selected-header first-pic").attr("src" , "../img/" + grade + "/1.jpeg");
+//     $('.first-pic').replaceWith(leftPicRow);
 
-    var leftPicRow = $('<img>').addClass("selected-header first-pic").attr("src" , "img/" + grade + "/1.jpeg");
-    $('.first-pic').replaceWith(leftPicRow);
+//     var row = $('<h1>').addClass("selected-header selected-main").text(grade);
+//     $('.selected-main').replaceWith(row);
 
-    var row = $('<h1>').addClass("selected-header selected-main").text(grade);
-    $('.selected-main').replaceWith(row);
+//     var rightPicRow = $('<img>').addClass("selected-header second-pic").attr("src" , "../img/" + grade + "/2.jpeg");
+//     $('.second-pic').replaceWith(rightPicRow);
 
-    var rightPicRow = $('<img>').addClass("selected-header second-pic").attr("src" , "img/" + grade + "/2.jpeg");
-    $('.second-pic').replaceWith(rightPicRow);
-
-    $('#members').load("member/" + grade + ".html");
-    $('#regends').load("member/" + grade + ".html");
-    $('.main-content').fadeIn(1000);
-    $('.selected-grade').fadeIn(1000);
-};
-    
-});
+//     $('#members').load("../member/" + grade + ".html");
+//     $('#regends').load("../member/" + grade + ".html");
+//     $('.main-content').fadeIn(1000);
+//     $('.selected-grade').fadeIn(1000);
+// };
+//     
+// });
 $('.grade').hover(
     function(){
-        $(this).stop(true).animate({color: "red", "font-size": "60px"}, 500);
+        $(this).stop(true).animate({color: "red"}, 500);
     },
     function(){
-        $(this).stop(true).animate({color: "black", "font-size": "50px"}, 500);
+        $(this).stop(true).animate({color: "black"}, 500);
     });
+
+});

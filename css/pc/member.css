@@ -1,13 +1,11 @@
 @charset "UTF-8";
 
-body{
-  margin-bottom: 200px;
-  background-color: #cafafc;
-  width:1200px;
-  margin:auto;
+main{
+  display: flex;
 }
 
 .top-content{
+  width: 1100px;
   text-align: center;
   height:600px;
   width:auto;
@@ -36,7 +34,11 @@ ul {
   background-color: #cafafc;
   outline: none;
   border: none;
+}
 
+.top-content a{
+  color: black;
+  text-decoration: none;
 }
 
 button:focus{
@@ -70,6 +72,7 @@ button:focus{
 }
 
 .main-content{
+  width: 1100px;
   text-align: center;
   width: auto;
   margin-right: auto;
