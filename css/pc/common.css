@@ -21,7 +21,7 @@ main{
     line-height: 100px;
 }
 
-.view-change , .member-view-change{
+.sp-view-change, .view-change, .member-view-change, .sp-member-view-change{
     margin-top: 100px;
     height: 50px;
     width:100％;
