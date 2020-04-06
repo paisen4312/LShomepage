@@ -45,11 +45,11 @@ $(document)
     }
 )
 .on('mouseover', '.grade-link', function(){
-    $(this).find('a').stop(true).animate({color: "red", fontSize: "45px"}, 500);
+    $(this).find('a').stop(true).animate({color: "red", fontSize: "50px"}, 500);
     }
 )
 .on('mouseout', '.grade-link', function(){
-    $(this).find('a').stop(true).animate({color: "white", fontSize: "40px"}, 500);
+    $(this).find('a').stop(true).animate({color: "white", fontSize: "45px"}, 500);
     }
 );
 

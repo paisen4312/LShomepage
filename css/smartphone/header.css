@@ -10,7 +10,6 @@ body{
   display: block;
   width: auto;
   color: white;
-  text-decoration: none;
   height: 80px;
   background-color: darkblue;
   position: fixed;
@@ -21,13 +20,7 @@ body{
   opacity: 0.8;
   margin: 0;
 }
-.contents .menu{
-  display: none;
-  margin: 0;
-}
-.menu-contents{
-  display: none;
-}
+
 .contents a{
   width: 110px;
   display: inline-flex;
@@ -40,6 +33,14 @@ body{
   line-height: 84px;
   filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
+.contents .menu{
+  display: none;
+  margin: 0;
+}
+.menu-contents{
+  display: none;
+}
+
 @media ( max-width : 1070px) {
 
   .contents {
