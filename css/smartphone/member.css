@@ -52,6 +52,7 @@ button:focus{
 .top-content .selected-grade{
   width: auto;
   display: flex;
+  margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
 }
