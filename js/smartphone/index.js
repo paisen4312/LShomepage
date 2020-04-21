@@ -1,29 +1,6 @@
 'use strict';
 $(function(){
 
-var header = $('<div>').addClass("contents").append('<a href="../smartphone/index.html">TOPPAGE</a>')
-.append('<a href="../smartphone/events.html">EVENTS</a>')
-.append('<a href="../smartphone/member.html">MEMBERS</a>')
-.append('<a href="../smartphone/comingsoon.html">NEWS</a>')
-.append('<a href="../smartphone/comingsoon.html">RESULTS</a>')
-.append('<a href="https://twitter.com/waseda_ls2013">TWITTER</a>')
-.append('<a href="https://www.instagram.com/ls_waseda/?hl=ja">INSTAGRAM</a>')
-.append('<a href="../smartphone/history.html">HISTORY</a>')
-.append('<div class = "menu"><p class = "hub">MENU(開く)</p></div>')
-
-
-  var menuContents = $('<div>').addClass("menu-contents").addClass("hidden-menu").append('<a href="../smartphone/index.html">TOPPAGE</a><br>')
-  .append('<a href="../smartphone/events.html">EVENTS</a><br>')
-  .append('<a href="../smartphone/member.html">MEMBERS</a><br>')
-  .append('<a href="../smartphone/comingsoon.html">NEWS</a><br>')
-  .append('<a href="../smartphone/comingsoon.html">RESULTS</a><br>')
-  .append('<a href="https://twitter.com/waseda_ls2013">TWITTER</a><br>')
-  .append('<a href="https://www.instagram.com/ls_waseda/?hl=ja">INSTAGRAM</a><br>')
-  .append('<a href="../smartphone/history.html">HISTORY</a>')
-
-$('#header').append(header);
-$('.menu').append(menuContents);
-
 $('.menu').click(function(){
     if($('.menu-contents').hasClass("hidden-menu")){
         $('.menu-contents').fadeIn(1000);
