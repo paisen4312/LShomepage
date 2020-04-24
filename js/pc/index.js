@@ -208,4 +208,6 @@ $('.slideshow').each(function () {
         startTimer();
 
     });
+
+
 });

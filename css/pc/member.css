@@ -26,7 +26,7 @@ ul {
   display: flex;
   justify-content: center;
   height: 100px;
-  width:500px;
+  width:400px;
   font-size: 50px;
   background-color: #cafafc;
   outline: none;
@@ -43,7 +43,7 @@ button:focus{
 }
 
 .top-content .selected-grade{
-  width: auto;
+  width: 800px;
   display: flex;
   margin-right: auto;
   margin-left: auto;
@@ -61,8 +61,8 @@ button:focus{
 }
 
 .top-content .selected-grade h1{
-  font-size: 100px;
-  width: 400px;
+  font-size: 60px;
+  width: 200px;
   margin: 10px 0;
   text-align: center;
   line-height: 250px;
