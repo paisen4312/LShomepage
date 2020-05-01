@@ -1,15 +1,7 @@
-$('header').load("header.html");
 $('.main-side').load("../common/side.html");
 $('.view-change').load("../common/viewChange.html");
-$('.index-view-change').load("common/indexViewChange.html");
-$('.member-header').load("../memberHeader.html");
-$('.member-main-side').load("../../common/memberSide.html");
-$('.member-view-change').load("../../common/memberViewChange.html");
 $('.sp-header').load("header.html");
-$('.sp-member-header').load("../memberHeader.html");
 $('.sp-view-change').load("../common/spViewChange.html");
-$('.index-sp-view-change').load("common/indexSpViewChange.html");
-$('.sp-member-view-change').load("../../common/spMemberViewChange.html");
 
 
 $(window).on("load",function() {
@@ -32,14 +24,6 @@ $(document)
 }
 )
 .on('mouseout', '.view-change', function(){
-    $(this).find('a').stop(true).animate({color: "black"}, 500);
-}
-)
-.on('mouseover', '.member-view-change', function(){
-    $(this).find('a').stop(true).animate({color: "red"}, 500);
-}
-)
-.on('mouseout', '.member-view-change', function(){
     $(this).find('a').stop(true).animate({color: "black"}, 500);
 }
 )

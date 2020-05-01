@@ -2,16 +2,7 @@ $('header').load("header.html");
 $('.main-side').load("../common/side.html");
 $('.view-change').load("../common/viewChange.html");
 $('.index-view-change').load("common/indexViewChange.html");
-$('.member-header').load("../memberHeader.html");
-$('.member-main-side').load("../common/memberSide.html");
-$('.member-view-change').load("../common/memberViewChange.html");
-$('.sp-header').load("../pc/header.html");
-$('.sp-member-header').load("../pc/memberHeader.html");
-$('.sp-view-change').load("../common/spViewChange.html");
 $('.index-sp-view-change').load("common/indexSpViewChange.html");
-$('.sp-member-view-change').load("common/spMemberViewChange.html");
-
-
 
 window.onload = function() {
     window.scroll(0,0);
@@ -97,7 +88,7 @@ function href(grade){
             $headerClone = $('.contents').contents().clone(),
 
             // ヘッダーのクローンのコンテナー
-            $headerCloneContainer = $('<div class="header-clone"></div>'),
+            $headerCloneContainer = $('<div class="header-clone invisible"></div>'),
 
             // HTML の上辺からヘッダーの底辺までの距離 = ヘッダーのトップ位置 + ヘッダーの高さ
             threshold = $header.offset().top + $header.outerHeight() + 130;
@@ -116,10 +107,14 @@ function href(grade){
                 $header.removeClass('visible');
                 $header.addClass('invisible');
                 $headerCloneContainer.addClass('visible');
+                $headerCloneContainer.removeClass('invisible');
+
             } else {
                 $header.addClass('visible');
                 $header.removeClass('invisible');
                 $headerCloneContainer.removeClass('visible');
+                $headerCloneContainer.addClass('invisible');
+
             }
         }));
 
